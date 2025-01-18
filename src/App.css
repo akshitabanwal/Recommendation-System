@@ -1,0 +1,24 @@
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --text-clr: #4a5c6c;
+  --bg-clr: #f2f4fc;
+  --border-clr: rgb(156, 176, 193);
+}
+
+
+   
+
+
+
+
+

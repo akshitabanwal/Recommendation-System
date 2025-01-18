@@ -1,0 +1,123 @@
+/* General Styling */
+body {
+    background-color: var(--bg-clr);
+  }
+  
+  h2 {
+    font-family: "Lora", serif;
+    color: var(--text-clr);
+    font-size: 2.4rem; /* Adjusted for better visibility */
+    margin-bottom: 1.5rem;
+    text-align: center;
+    transition: all 0.5s linear;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    width: 100%; /* Ensure image fits inside card */
+    max-height: 25rem; /* Prevent overflow */
+    border-radius: 1rem;
+    transition: all 0.3s linear;
+  }
+  
+  /* Container and Grid */
+  .container {
+    max-width: 120rem; /* Adjusted for consistent alignment */
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); /* Responsive layout */
+    justify-content: center;
+    align-items: stretch;
+  }
+  
+  /* Card Styling */
+  .card {
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px; /* Subtle shadow for depth */
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+    text-align: center;
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Add interactivity */
+  }
+  
+  .link {
+    font-size: 1.6rem;
+    color: var(--text-clr);
+    margin-top: 1.2rem;
+    padding: 1rem 2rem;
+    border: 0.2rem solid #ffb3c1; /* Consistent with design */
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .link:hover {
+    background: linear-gradient(135deg, #a2c2e6, #cce7ff);
+    color: #2c3e50;
+  }
+  
+  .link:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* Search Section */
+  .search-section {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  input {
+    width: 40rem; /* Adjusted width for larger inputs */
+    max-width: 100%; /* Ensures input is responsive */
+    border-radius: 50px;
+    border: 1px solid var(--border-clr);
+    padding: 1rem 2rem;
+    font-size: 1.6rem; /* Slightly smaller for consistency */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #ffb3c1; /* Highlight input on focus */
+    box-shadow: rgba(255, 179, 193, 0.4) 0px 0px 8px;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+      gap: 1.5rem;
+    }
+  
+    h2 {
+      font-size: 2rem; /* Adjusted for smaller screens */
+    }
+  
+    input {
+      width: 80%;
+    }
+  
+    .card {
+      padding: 1rem;
+    }
+  }
+  

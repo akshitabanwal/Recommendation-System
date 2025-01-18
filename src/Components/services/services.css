@@ -1,0 +1,190 @@
+/** Services Page CSS */
+
+/* General Page Styling */
+.services {
+  text-align: center;
+  padding: 40px;
+  background-color: var(--bg-clr); /* Matches the root background color */
+}
+
+.services-title {
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+  color: var(--text-clr); /* Matches the root text color */
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+/* Responsive Grid Layout for Cards */
+.services-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Flexible grid for responsiveness */
+  gap: 20px;
+  margin: 0 auto;
+  justify-items: center;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1200px; /* Limits the overall width */
+}
+
+/* Card Styling */
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  padding: 30px;
+  border: 2px solid var(--border-clr); /* Matches the root border color */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto; /* Flexibility for content */
+  max-width: 400px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Circle Image Styling */
+.card-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto 20px;
+  border: 4px solid var(--bg-clr); /* Matches the root background color */
+}
+
+/* Text Styling */
+.card-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--text-clr); /* Matches the root text color */
+  margin-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+.card-description {
+  font-size: 1.1rem;
+  color: var(--text-clr); /* Matches the root text color */
+  padding: 0 10px;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+
+/*=============== Responsive Breakpoints ===============*/
+
+/* For large devices (up to 992px) */
+@media screen and (max-width: 992px) {
+  .services {
+    padding: 30px;
+  }
+
+  .services-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .services-cards {
+    grid-template-columns:repeat(3,218px) ;
+    gap: 25px;
+  }
+
+  .card {
+    padding: 25px;
+    max-width: 350px;
+  }
+
+  .card-title {
+    font-size: 1.4rem;
+  }
+
+  .card-description {
+    font-size: 1rem;
+  }
+}
+
+/* For medium devices (up to 768px) */
+@media screen and (max-width: 768px) {
+  .services {
+    padding: 20px;
+  }
+
+  .services-title {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+  }
+
+  .services-cards {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+  }
+
+  .card {
+    padding: 20px;
+    max-width: 300px;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+
+  .card-description {
+    font-size: 0.95rem;
+  }
+}
+
+/* For small devices (up to 576px) */
+@media screen and (max-width: 576px) {
+  .services {
+    padding: 15px;
+  }
+
+  .services-title {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+
+  .services-cards {
+    gap: 15px;
+  }
+
+  .card {
+    padding: 15px;
+    max-width: 280px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-description {
+    font-size: 0.9rem;
+  }
+}
+
+/* For very small devices (up to 350px) */
+@media screen and (max-width: 350px) {
+  .services-title {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+
+  .card {
+    padding: 10px;
+    max-width: 250px;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-description {
+    font-size: 0.85rem;
+  }
+}
